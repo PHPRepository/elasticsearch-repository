@@ -1,0 +1,34 @@
+{
+  "name": "nilportugues/elasticSearch-repository",
+  "description": "ElasticSearch Repository implementation",
+  "keywords": ["elastica", "elasticsearch", "elastic", "repository", "cache", "ddd", "hexagonal", "ports and adapters", "ports", "adapters", "repository", "pageable", "pagination", "nil portugues", "nilportugues"],
+  "type": "library",
+  "homepage": "http://nilportugues.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nil Portugués",
+      "email": "contact@nilportugues.com"
+    }
+  ],
+  "require": {
+    "elasticsearch/elasticsearch": "~2.0",
+    "nilportugues/repository": "^2.0",
+    "nilportugues/assert": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8.*",
+    "fabpot/php-cs-fixer": "1.9.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "NilPortugues\\Foundation\\Infrastructure\\Model\\Repository\\ElasticSearch\\": "src",
+      "NilPortugues\\Example\\Repository\\": "example/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "NilPortugues\\Tests\\Foundation\\Infrastructure\\Model\\Repository\\ElasticSearch\\": "tests/"
+    }
+  }
+}
